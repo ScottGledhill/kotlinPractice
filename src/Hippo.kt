@@ -1,4 +1,8 @@
-class Hippo(image: String, food: String, habitat: String, hunger: Int) : Animal(image, food, habitat, hunger) {
+class Hippo() : Animal() {
+    override val image = "hippo.jpg"
+    override val food = "grass"
+    override val habitat = "water"
+
     override fun makeNoise() {
         println("HIPPO NOISE")
     }

@@ -1,4 +1,4 @@
-class Cheetah(image: String, food: String, habitat: String, hunger: Int) : Animal(image, food, habitat, hunger) {
+class Cheetah() : Feline() {
     override fun makeNoise() {
         println("Cheetah NOISE")
     }

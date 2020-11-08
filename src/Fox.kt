@@ -1,4 +1,4 @@
-class Fox(image: String, food: String, habitat: String, hunger: Int) : Animal(image, food, habitat, hunger) {
+class Fox() : Canine() {
     override fun makeNoise() {
         println("Fox NOISE")
     }
