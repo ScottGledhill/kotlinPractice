@@ -1,8 +1,8 @@
-open class Animal(val image: String, val food: String, val habitat: String, val hunger: Int) {
-    fun makeNoise() {
+abstract class Animal(val image: String, val food: String, val habitat: String, val hunger: Int) {
+    open fun makeNoise() {
         println("roar")
     }
-    fun eat() {
+    open fun eat() {
         println("eat ")
     }
     fun roam() {
