@@ -1,19 +1,17 @@
-open class Animal {
-    open val image = ""
-    open val food = ""
-    open val habitat = ""
-    val hunger = 10
+abstract class Animal {
+    abstract val image: String
+    abstract val food: String
+    abstract val habitat: String
+    var hunger: Int = 10
 
-    open fun makeNoise() {
-        println("roar")
-    }
-    open fun eat() {
-        println("eat ")
-    }
+    abstract fun makeNoise()
+    abstract fun eat()
     open fun roam() {
-        println("roam")
+        println("animal roaming")
     }
-    fun sleep() {
-        println("sit down bitch")
+    open fun sleep() {
+        println("animal sleeping")
     }
+
+
 }
